@@ -2,6 +2,8 @@ package br.senai.sp.jandira.ui;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -90,6 +92,33 @@ public class FrameNewClient {
 			public void mouseClicked(MouseEvent e) {
 
 				System.out.println("clicou");
+				
+			}
+		});
+		
+		frameOne.addKeyListener(new KeyListener() {
+			
+			@Override
+			public void keyTyped(KeyEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void keyReleased(KeyEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void keyPressed(KeyEvent e) {
+				System.out.println(e.getKeyChar());
+				System.out.println(e.getKeyCode());
+				if (e.getKeyCode() == 27) {
+					
+					
+					
+				}
 				
 			}
 		});
